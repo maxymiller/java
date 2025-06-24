@@ -8,7 +8,7 @@ download git, jdk java,
 abrir a pasta ontem você quer copiar git do explorador de arquevo do windows
 vai na barra do caminho da pasta e coloca cmd
 
-git clone
+git clone <link html>
 cd java\web
 md config users
 javac Main.java
@@ -25,7 +25,7 @@ ls -la ou ls -al = ver informação e oculto
 
 cd <para a pasta>
 
-git clone
+git clone <link html>
 cd java/web
 mkdir config user
 javac Main.java
