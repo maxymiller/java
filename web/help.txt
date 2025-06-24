@@ -1,2 +1,32 @@
 criar pasta "config" "users" "produto"
   web/*
+
+auto
+windows
+download git, jdk java,
+
+abrir a pasta ontem você quer copiar git do explorador de arquevo do windows
+vai na barra do caminho da pasta e coloca cmd
+
+git clone
+cd web
+md config users
+javac Main.java
+java Main
+
+linux
+sudo apt install git
+download jdk java
+
+ls = ver pasta e arquevo
+ls -a = ver pasta e arquevo oculto
+ls -l = ver mais informação
+ls -la ou ls -al = ver informação e oculto
+
+cd <para a pasta>
+
+git clone 
+cd web
+mkdir config user
+javac Main.java
+java Main
