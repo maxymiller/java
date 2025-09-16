@@ -10,8 +10,8 @@ public class codemaxymiller {
     public static int veralllinhanumeroout;
 
     public static void verarquevo(String filename, int linhafile){
-        String linha;
         verarquevoout = null;
+        String linha;
         try (BufferedReader leitor = new BufferedReader(new FileReader(filename))) {
             int i = 0;
             if ((linha = leitor.readLine()) != null)
@@ -43,7 +43,6 @@ public class codemaxymiller {
 
     public static void veralllinha(String file){
         int loop = 0;
-        verarquevoout = null;
 
         do {
             loop++;
