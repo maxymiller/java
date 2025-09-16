@@ -11,6 +11,7 @@ public class codemaxymiller {
 
     public static void verarquevo(String filename, int linhafile){
         String linha;
+        verarquevoout = null;
         try (BufferedReader leitor = new BufferedReader(new FileReader(filename))) {
             int i = 0;
             if ((linha = leitor.readLine()) != null)
@@ -28,6 +29,7 @@ public class codemaxymiller {
 
     public static void novolinha(String filename, String texto){
         String linha;
+        novolinhaout = 0;
         try (BufferedWriter escritor = new BufferedWriter(new FileWriter(filename, true))) {
             escritor.write(texto);
             escritor.newLine();
