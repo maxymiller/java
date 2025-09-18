@@ -29,7 +29,7 @@ public class codemaxymiller {
 
     public static void novolinha(String filename, String texto){
         String linha;
-        novolinhaout = 0;
+        
         try (BufferedWriter escritor = new BufferedWriter(new FileWriter(filename, true))) {
             escritor.write(texto);
             escritor.newLine();
