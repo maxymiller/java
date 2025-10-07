@@ -29,7 +29,7 @@ public class codemaxymiller {
 
     public static void novolinha(String filename, String texto){
         String linha;
-        
+        novolinhaout = 0;
         try (BufferedWriter escritor = new BufferedWriter(new FileWriter(filename, true))) {
             escritor.write(texto);
             escritor.newLine();
@@ -65,5 +65,24 @@ public class codemaxymiller {
             veralllinhaout[loop3] = vetor[loop3];
         }while (loop3 < loop-1);
         veralllinhanumeroout = loop;
+    }
+
+    public static void executeCommand(String command){
+        try {
+            Process processo = Runtime.getRuntime().exec(command);
+
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(processo.getInputStream())
+            );
+
+            String linha;
+            while ((linha = reader.readLine()) != null){
+                System.out.println(linha);
+            }
+
+            processo.waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
