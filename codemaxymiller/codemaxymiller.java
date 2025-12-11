@@ -27,10 +27,10 @@ public class codemaxymiller {
         }
     }
 
-    public static void novolinha(String filename, String texto){
+    public static void novolinha(String filename, String texto, Boolean nao_limpar){
         String linha;
         novolinhaout = 0;
-        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(filename, true))) {
+        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(filename, nao_limpar))) {
             escritor.write(texto);
             escritor.newLine();
             //LOGGER.info("texto graver com susesso!");
