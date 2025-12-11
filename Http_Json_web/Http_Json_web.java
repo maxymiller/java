@@ -136,7 +136,7 @@ public class Http_Json_web {
             sendResponse(exchange, 200, json);
         }
 
-        private String extrairCepDoJson(String json, String valor){
+        private String extrairJson(String json, String valor){
             try {
                 return json.split("\"" + valor + "\"")[1]
                         .split(":")[1]
