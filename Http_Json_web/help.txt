@@ -1,0 +1,14 @@
+criarJson(nome, valor) ex. "{" + criarJson() + "}" ou "{" + criarJson() + ", " + criarJson() + "}"
+extrairJson()
+
+getPort()
+setPort()
+
+getDirhtml()
+setDirhtml()
+
+getDircss()
+setDircss()
+
+getDirjs()
+setDirjs()
