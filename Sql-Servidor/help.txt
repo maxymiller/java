@@ -1,0 +1,12 @@
+Connection conn = SqlServidor.connection();
+if(conn != null){
+	String sql = "select * from";
+	ResultSet rs = conn.prepareStatement(sql).executeQuery();
+	while (rs.next()){
+		System.out.println(
+			rs.getInt() + " | " +
+			rs.getString()
+		);
+	}
+	conn.close();
+}
