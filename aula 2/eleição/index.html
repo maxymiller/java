@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <script>
+        var nome = prompt("Digite o seu Nome:")
+        var ano = prompt("Digite a sua idade:")
+
+        document.write(
+            "<table>" +
+            "<caption>CEDULA</caption>" +
+            "<tr><th>Nome:</th><td>" + nome + "</td></tr>" +
+            "<tr><th>Idade:</th><td>" + ano +"</td></tr>" +
+            "<tr><th colspan='2'>"
+        )
+        if(ano >= 66) {
+            document.write("Voto Facutativo")
+        } else if(ano >= 18) {
+            document.write("Voto Obrigatório")
+        } else if(ano >= 16) {
+            document.write("Voto Facutativo")
+        } else {
+            document.write("Não pode Votar")
+        }
+        document.write(
+            "</th></tr>" +
+            "</table>"
+        )
+    </script>
+</body>
+</html>

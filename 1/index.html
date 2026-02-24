@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula javascript</title>
+</head>
+<body>
+    
+    <script>
+        //const date = new Date();
+        //function dateDMYHMS() {
+	        //const date = new Date();
+	        //const dateDMYHMSv = date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+	        //return dateDMYHMSv;
+        //}
+
+        var nome = prompt("Digite o seu Nome:")
+        var sobrenome = prompt("Digite o seu Sobre Nome:")
+        //var dataNASC = prompt("Digite o seu Data de Nascimento:")
+        var dataNASC_Dia = prompt("Digite o seu Dia do Nascimento \(Dia\):")
+        var dataNASC_Mes = prompt("Digite o seu Mes do Nascimento \(Mes\):")
+        var dataNASC_Ano = prompt("Digite o seu Ano do Nascimento \(Ano\):")
+        var telefone = prompt("Digite o seu Telefone:")
+        var cidade = prompt("Digite o seu Cidade:")
+
+        const date = new Date();
+        //console.log(date.getDate)
+        const idade = null;
+        if(dataNASC_Mes >= date.getMonth && dataNASC_Dia >= date.getDate) {
+            idade = (date.getFullYear - dataNASC_Ano)
+        }else{
+            idade = ((date.getFullYear - parseInt(dataNASC_Ano)) - 1)
+        }
+
+        document.write(
+            "<h1>SEJA BEM-VINDO</h1>" +
+            "<ul><li>Nome: \"" + nome +
+            "\"</li><li>Sober: \"" + sobrenome +
+            //"\"</li><li>Data de Nascimento: \"" + dataNASC +
+            "\"</li><li>Idade: \"" + idade + "\"" +
+            "\"</li><li>Telefone: \"" + telefone +
+            "\"</li><li>Sidate: \"" + cidade +
+            "\"</li></ul>"
+        )
+    </script>
+
+</body>
+</html>
