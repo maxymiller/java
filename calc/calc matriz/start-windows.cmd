@@ -8,8 +8,7 @@ echo user: %user%
 echo pasta: %cdhome%
 ::pause
 cls
-echo bem vindo user %user% code maxymiller e java
-cd maxymiller-windows-all
+echo bem vindo user %user% code java matriz
 
 javac -version
 if %errorlevel% == 0 goto javacsus
