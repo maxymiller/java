@@ -1,5 +1,5 @@
 @echo off
-title maxymiller java todos crior
+title calc matriz
 ::mode 85,20
 set "cdhome=%cd%"
 set "user=%username%"
