@@ -2,7 +2,7 @@
 homepwd="$PWD"
 username="$USER"
 nul="$homepwd/tmp/nul"
-echo "bem vindo user $username code java maxymiller e java"
+echo "bem vindo user $username code java matriz"
 
 if javac --version; then
 javac Main.java
