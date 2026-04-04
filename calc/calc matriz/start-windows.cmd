@@ -8,6 +8,9 @@ echo user: %user%
 echo pasta: %cdhome%
 ::pause
 cls
+
+cd "calc matriz (V4)"
+
 echo bem vindo user %user% code java matriz
 
 javac -version
