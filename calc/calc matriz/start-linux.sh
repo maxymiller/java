@@ -4,6 +4,8 @@ username="$USER"
 nul="$homepwd/tmp/nul"
 echo "bem vindo user $username code java matriz"
 
+cd "calc matriz (V4)"
+
 if javac --version; then
 javac Main.java
 else
