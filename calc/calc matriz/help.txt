@@ -1,0 +1,4 @@
+cmd/shell
+  java -jar "calc matriz (V4).jar"
+  ./start-linux.sh
+  ./
