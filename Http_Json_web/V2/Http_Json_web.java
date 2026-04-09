@@ -57,9 +57,9 @@ public class Http_Json_web {
 
                 String path = exchange.getRequestURI().getPath();
 
-                if ("/".equals(path)){
-                    LOGGER.info("JSON Recebido do cliete: " + requestBody);
-                }
+                //if ("/".equals(path)){
+                    //LOGGER.info("JSON Recebido do cliete: " + requestBody);
+                //}
 
                 if ("GET".equals(exchange.getRequestMethod())) {
 
