@@ -1,3 +1,7 @@
+import java.io.IOException;
+public class Main throws IOException {
+}
+
 criarJson(nome, valor) ex. "{" + criarJson() + "}" ou "{" + criarJson() + ", " + criarJson() + "}"
 extrairJson()
 
