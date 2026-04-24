@@ -232,8 +232,7 @@ public class Http_Json_web {
 
         private String extrairJson(String json, String valor){
             try {
-                return json.split("\"" + valor + "\"")[1]
-                        .split(":")[1]
+                return json.split("\"" + valor + "\":")[1]
                         .split("\"")[1];
             }catch (Exception e){
                 return null;
