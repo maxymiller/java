@@ -95,7 +95,8 @@ public class Http_Json_web {
                 //System.out.println(loop);
                 in = in + codemaxymiller.veralllinhaout[loop] + "\n";
             }
-
+            exchange.getResponseHeaders()
+                .set("Content-Type", "text/html; charset=UTF-8");
             sendResponse(exchange, 200, in);
         }
 
@@ -106,7 +107,8 @@ public class Http_Json_web {
                 //System.out.println(loop);
                 in = in + codemaxymiller.veralllinhaout[loop] + "\n";
             }
-
+            exchange.getResponseHeaders()
+                .set("Content-Type", "text/css; charset=UTF-8");
             sendResponse(exchange, 200, in);
         }
 
@@ -117,7 +119,8 @@ public class Http_Json_web {
                 //System.out.println(loop);
                 in = in + codemaxymiller.veralllinhaout[loop] + "\n";
             }
-
+            exchange.getResponseHeaders()
+                .set("Content-Type", "application/javascript; charset=UTF-8");
             sendResponse(exchange, 200, in);
         }
 
